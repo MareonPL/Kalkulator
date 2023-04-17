@@ -48,8 +48,13 @@ namespace Kalkulator
             Console.WriteLine("Podaj b");
             int b = int.Parse(Console.ReadLine());
 
-            int wynik = a / b;
-            Console.WriteLine($"Wynik obliczenia to: {wynik}");
+            if (b == 0)
+            {
+                Console.WriteLine("Nie można podzielić przez 0!");
+            } else {
+                int wynik = a / b;
+                Console.WriteLine($"Wynik obliczenia to: {wynik}");
+            }
         }
 
         public static void Potęga()
@@ -70,6 +75,23 @@ namespace Kalkulator
 
             int wynik = (int)Math.Sqrt(liczba);
             Console.WriteLine($"Wynik obliczenia to: {wynik}");
+        }
+
+        public static void FunkcjaTrygometyczna()
+        {
+            Console.WriteLine("Podaj a:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj b:");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj c:");
+            int c = int.Parse(Console.ReadLine());
+
+            int sin = a / c;
+            int cos = b / c;
+            int tg = a / b;
+            int ctg = b / a;
+
+            Console.WriteLine($"Wynik obliczenia to: (sin = {sin}, cos = {cos}, tg = {tg}, ctg = {ctg}.");
         }
     }
 }
