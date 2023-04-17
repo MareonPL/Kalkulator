@@ -37,7 +37,7 @@ namespace Kalkulator
                         Obliczenia.Pierwiastek();
                         break;
                     case 7:
-                        throw new Exception("koniec");
+                        Obliczenia.FunckjaTryg();
                 }
             }
         }
@@ -47,7 +47,7 @@ namespace Kalkulator
             Console.WriteLine("\n\t\t====================");
             Console.WriteLine("\t\t==== Kalkulator ====");
             Console.WriteLine("\n\t\t====================");
-            Console.WriteLine("\t\t 1. Suma\n\t\t 2. Różnica \n\t\t 3. Iloczyn \n\t\t 4. Iloraz \n\t\t 5. Potęga \n\t\t 6. Pierwiastek \n\t\t 7. Zakończ");
+            Console.WriteLine("\t\t 1. Suma\n\t\t 2. Różnica \n\t\t 3. Iloczyn \n\t\t 4. Iloraz \n\t\t 5. Potęga \n\t\t 6. Pierwiastek \n\t\t 7. Funkcja trygonometryczna \n\t\t 8. Zakończ");
         }
     }
 }
