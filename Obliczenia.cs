@@ -77,7 +77,7 @@ namespace Kalkulator
             Console.WriteLine($"Wynik obliczenia to: {wynik}");
         }
 
-        public static void FunkcjaTryg()
+        public static void FunkcjaTrygometyczna()
         {
             Console.WriteLine("Podaj a:");
             int a = int.Parse(Console.ReadLine());
